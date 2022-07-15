@@ -65,7 +65,9 @@ rosrun ntrip_ros ntripclient.py
 
 If your network is fine, UART successfully opened and GNSS single point position is fixed, the recieved RTCM data is sent to UART2 of F9P module.
 
-__Then, wait for ```carr_soln``` of topic ```/ublox_driver/receiver_pvt``` turning to ```2```, which means RTK fixed solution (```0``` means no RTK, ```1``` means RTK float solution), and enjoy it.__
+__Then, wait for__ ```carr_soln``` __of topic__ ```/ublox_driver/receiver_pvt``` __turning to__ ```2```__, which means RTK fixed solution__ (```0``` means no RTK, ```1``` means RTK float solution), __and enjoy it.__
+
+__Note that RTK solution is obtained in topic__ ```/ublox_driver/receiver_pvt```.
 
 ## 3.5 Hardware configuration
 In my case, I'm using 
