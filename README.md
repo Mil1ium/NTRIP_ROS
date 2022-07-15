@@ -74,7 +74,8 @@ In my case, I'm using
 1) Beitian BT-F9PK4 module;
 2) Beitian BT-345 antenna;
 3) Quectel EC20 4G module;
-4) Lenovo laotop with i5-8265U.
+4) CH340 USB to UART module made by myself;
+5) Lenovo laotop with i5-8265U.
 
 # 4. Reference
 ## 4.1 Msg files
