@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>ntrip_ros</name>
+  <version>1.0.0</version>
+  <description>NTRIP client for UBLOX-F9P</description>
+
+  <maintainer email="millium@qq.com">mil1ium</maintainer>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <!--run_depend>nmea_msgs</run_depend-->
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
