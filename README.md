@@ -46,10 +46,10 @@ After configuration, you can see messages printed in ```Packet Console```.
 ## 3.3 Enable PVT message
 Because I'm using [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver), I need to enable ```UBX-RXM-RAWX```, ```UBX-RXM-SFRBX``` and ```UBX-PVT``` message in ```u-center```.
 
-Actually, **only** ```UBX-PVT``` **message is needed for RTK**. You can use other ublox driver to extract ```PVT``` message and publish as ROS topic so ```RAWX``` and ```SFRBX``` is not needed anymore.
+Actually, **only** ```UBX-PVT``` **message is needed for RTK**. You can use other ublox driver to extract ```PVT``` message and publish as ROS topic so ```RAWX``` and ```SFRBX``` is not needed anymore. Or you could use ublox driver which supports NMEA, then you just need to enable NMEA-GxGGA and subscribe NMEA message and send it to NTRIP caster.
 
 ## 3.4 Run with your Ublox-F9P
-1) Plug in your F9P's UART ports to your computer via USB-UART module, and check ports' name, like ```/dev/ttyUSB0```, then change the port name in ```ntripclient.py``` (UART2, for sending RTCM data to module) and ```driver_config.yaml``` (UART1, for recieve PVT message from module) of ublox_driver, don't forget to obtain r/w permissions of the ports. 
+1) Plug in your F9P's UART ports to your computer via USB-UART module, and check ports' name, like ```/dev/ttyUSB0```, then change the __port name and baudrate__ in ```ntripclient.py``` (F9P's UART2, for sending RTCM data to module) and ```driver_config.yaml``` (F9P's UART1, for recieve PVT message from module) of [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver), don't forget to obtain r/w permissions of the ports. 
 
 2) Launch [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver), and ```rostopic echo``` topic ```/ublox_driver/receiver_pvt```, remember to ```source devel/setup.bash``` in your terminal in ublox_driver workspace.
 
