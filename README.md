@@ -75,7 +75,7 @@ In my case, I'm using
 2) Beitian BT-345 antenna;
 3) Quectel EC20 4G module;
 4) CH340 USB to UART module made by myself;
-5) Lenovo laotop with i5-8265U.
+5) Lenovo laptop with i5-8265U.
 
 # 4. Reference
 ## 4.1 Msg files
