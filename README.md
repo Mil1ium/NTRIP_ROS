@@ -32,7 +32,7 @@ catkin_make
 
 # 3. Run with you F9P module
 ## 3.1 Install u-center
-The version I'm using is v8.20 .
+The version I'm using is v21.09 , you can test NTRIP username and password in ```Reciever-NTRIP Client```.
 
 ## 3.2 Configure PORT and RATE of your F9P module
 Firstly you need to correctly configure UART port of your F9P module in ```Configure-PRT```, such as ```Baudrate``` and ```Protocol in/out```.
