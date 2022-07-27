@@ -1,6 +1,6 @@
 # NTRIP_ROS
 
-First time to upload my code here. This is a beta version for testing.
+First time to upload my code here. This is a **beta version** for testing.
 
 This program helps you get RTCM messages from NTRIP caster and get RTK solution:
 1) Recieve PVT topic from [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver);
@@ -8,6 +8,13 @@ This program helps you get RTCM messages from NTRIP caster and get RTK solution:
 3) Send GPGGA string to NTRIP server(NTRIP caster) by httplib.HTTPConnection, and get RTCM data from response;
 4) Send recieved RTCM data to Ublox-F9P module via UART when the port is opened and single point position valid;
 5) Reconnect if network failed.
+
+![NTRIP_ROS](https://user-images.githubusercontent.com/96182259/181194205-c9c13931-41e1-48f4-a052-b41d561e5a54.png)
+
+
+**CSDN blog** : https://blog.csdn.net/Millium/article/details/125837995?spm=1001.2014.3001.5502
+
+**Realtime test uploaded on Bilibili** : https://www.bilibili.com/video/BV1CW4y117Du/
 
 # 1. Prerequisites
 ## 1.1 ROS
@@ -79,7 +86,7 @@ In my case, I'm using
 
 # 4. Reference
 ## 4.1 Msg files
-ROS message file ```GnssPVTSolnMsg.msg``` and ```GnssTimeMsg.msg``` is copied from [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver). Many thanks to Dr. Cao for his work.
+ROS message file ```GnssPVTSolnMsg.msg``` and ```GnssTimeMsg.msg``` are copied from [ublox_driver](https://github.com/HKUST-Aerial-Robotics/ublox_driver). Many thanks to Dr. Cao for his work.
 ## 4.2 Code reference
 Thanks to these code contributors:
 
